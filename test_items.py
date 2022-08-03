@@ -9,7 +9,7 @@ link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 @pytest.mark.smoke
 def test_add_to_basket_button_is_visible(browser):
     browser.get(link)
-    time.sleep(30)
+    #time.sleep(30)
     browser.find_element(By.CSS_SELECTOR, ".btn.btn-lg.btn-primary.btn-add-to-basket")
     try:
         browser.find_element(By.CSS_SELECTOR, ".btn.btn-lg.btn-primary.btn-add-to-basket")
